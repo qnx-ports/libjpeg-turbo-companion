@@ -3,7 +3,7 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname=libjpeg-turbo
 pkgver=3.1.1
-pkgrel=${pkgrel:-0}
+pkgrel=1
 pkgdesc="Accelerated baseline JPEG compression and decompression library"
 url="https://libjpeg-turbo.org/"
 arch="all"
@@ -79,7 +79,6 @@ dev() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 d08c8eb77281c1eee2c93ef9f2eefaf79a4b9adff5172ebcb20c845ccad8896a28fc3d622002cc8b28964ff860dca0a491d6b1b921aaa7aedccd21b909aad4cb  libjpeg-turbo-3.1.1.tar.gz
 8dd77f623441003ecd5455fde5c44beda3093bfe356bcf8e869f2f43d96e651771f0f87c3e43c2ca3ebdc725d458da9bc97faab45aa2be31e4c208b165639787  allow-aarch64le-as-aarch64.patch
